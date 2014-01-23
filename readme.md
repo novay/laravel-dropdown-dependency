@@ -32,8 +32,8 @@
 
    - Isi masing-masing file tabel yang dibuat di `app/database/migrations/*`
 
-     - Untuk *Provinsi*
-     
+     - Untuk **Provinsi**
+
      	```
 		<?php
 
