@@ -325,6 +325,8 @@
    		
    		<a href="https://raw.github.com/novay/laravel-dropdown-dependency/master/app/views/_layouts/index.blade.php" target="_blank">SEPERTI INI XD</a>
 
+   - Unduh [jQuery](https://raw.github.com/novay/laravel-dropdown-dependency/master/public/assets/js/jquery.js), lalu letakkan di `public/assets/js/` atau dimanapun Anda mau.
+
    - Buat halaman target di `app/views/` juga dengan nama `index.blade.php`.
    		```
    		@extends('_layouts.index')
