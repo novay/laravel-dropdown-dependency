@@ -404,3 +404,5 @@
  - Laravel 4.1
  - jQuery v1.8.2
  - Dida Nurwanda
+
+#### Maaf Kalo Kurang Jelas, **Just Be Initiative**. Regard [Novay](www.novay.web.id).
