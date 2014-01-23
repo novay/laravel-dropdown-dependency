@@ -322,24 +322,9 @@
 
  - ####Views
    - Buat Layout di `app/views/_layouts/` dengan nama `index.blade.php` (buat folder `_layouts` manual).
-   		````
-   		<!DOCTYPE html>
-		<html>
-		    <head>
-		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		        <title>Demo Dropdown Dependency</title>
-		        {{ HTML::script("assets/js/jquery.js") }}
-		    </head>
-		    <body>
-		        @yield('content')
-		        <script type="text/javascript">
-		            $(document).ready(function() {
-		                @yield('script')
-		            });
-		        </script>
-		    </body>
-		</html>
-   		````
+   		
+   		<a href="https://raw.github.com/novay/laravel-dropdown-dependency/master/app/views/_layouts/index.blade.php">Seperti Ini XD</a>
+
    - Buat halaman target di `app/views/` juga dengan nama `index.blade.php`.
    		```
    		@extends('_layouts.index')
