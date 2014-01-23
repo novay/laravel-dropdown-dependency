@@ -1,9 +1,8 @@
 # Laravel Dropdown Dependency
 
 ### Demo
-<center>
-<img src="https://raw.github.com/novay/novay-gallery/master/My%20Screenshot/Demo/Demo%20Dropdown%20Dependency.gif" />
-</center>
+<img src="https://raw.github.com/novay/novay-gallery/master/My%20Screenshot/Demo/Demo%20Dropdown%20Dependency.gif" border="1px"/>
+
 ### Fitur
  - AJAX Process
  - SQLITE sebagai driver databasenya (*poor*)
