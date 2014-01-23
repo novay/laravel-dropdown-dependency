@@ -24,14 +24,51 @@
 
  - ####Migrations
    - Eksekusi Perintah berikut untuk membuat migration tabel :
+
      `php artisan migrate:make buat_tabel_provinsi`
      `php artisan migrate:make buat_tabel_kabupaten_kota`
      `php artisan migrate:make buat_tabel_kecamatan`
      `php artisan migrate:make buat_tabel_kelurahan_desa`
+
    - Isi masing-masing file tabel yang dibuat di `app/database/migrations/*`
-     - 
-     - 
-     - 
+
+     - Untuk *Provinsi*
+     
+     	```
+		<?php
+
+		use Illuminate\Database\Migrations\Migration;
+
+		class BuatTabelProvinsi extends Migration {
+
+			/**
+			 * Run the migrations.
+			 *
+			 * @return void
+			 */
+			public function up()
+			{
+				Schema::create('provinsi', function($t) {
+					$t->increments('id');
+					$t->string('nama', 50);
+				});
+			}
+
+			/**
+			 * Reverse the migrations.
+			 *
+			 * @return void
+			 */
+			public function down()
+			{
+				Schema::drop('provinsi');
+			}
+		}
+		```
+
+     - Untuk *Kabupaten*
+     - Untuk *Kecamatan*
+     - Untuk *Kelurahan*
 
 
 
