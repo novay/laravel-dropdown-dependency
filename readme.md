@@ -323,7 +323,7 @@
  - ####Views
    - Buat Layout di `app/views/_layouts/` dengan nama `index.blade.php` (buat folder `_layouts` manual).
    		
-   		<a href="https://raw.github.com/novay/laravel-dropdown-dependency/master/app/views/_layouts/index.blade.php">Seperti Ini XD</a>
+   		<a href="https://raw.github.com/novay/laravel-dropdown-dependency/master/app/views/_layouts/index.blade.php" target="_blank">SEPERTI INI XD</a>
 
    - Buat halaman target di `app/views/` juga dengan nama `index.blade.php`.
    		```
