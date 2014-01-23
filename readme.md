@@ -321,8 +321,8 @@
    		```
 
  - ####Views
-   - Buat Layout di `app/views/_layouts/` dengan nama index.blade.php (buat folder `_layouts` manual).
-   		```
+   - Buat Layout di `app/views/_layouts/` dengan nama `index.blade.php` (buat folder `_layouts` manual).
+   		````
    		<!DOCTYPE html>
 		<html>
 		    <head>
@@ -339,8 +339,8 @@
 		        </script>
 		    </body>
 		</html>
-   		```
-   - Buat halaman target di `app/views/` dengan nama index.blade.php.
+   		````
+   - Buat halaman target di `app/views/` juga dengan nama `index.blade.php`.
    		```
    		@extends('_layouts.index')
  
