@@ -5,9 +5,9 @@
 ### Fitur
  - AJAX Process
  - SQLITE sebagai driver databasenya (*poor*)
- - Daftar Lengkap Kabupaten/Kota di Kalimantan Timur
- - Daftar Lengkap Kecamatan di Kalimantan Timur
- - Daftar Lengkap Kelurahan/Desa di Kalimantan Timur
+ - **Daftar Lengkap** Kabupaten/Kota di Kalimantan Timur
+ - **Daftar Lengkap** Kecamatan di Kalimantan Timur
+ - **Daftar Lengkap** Kelurahan/Desa di Kalimantan Timur
 
 ### Instalasi
  - Download zip lalu extract
