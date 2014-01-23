@@ -1,7 +1,6 @@
 # Laravel Dropdown Dependency
 
-### Demo
-<img src="https://raw.github.com/novay/novay-gallery/master/My%20Screenshot/Demo/Demo%20Dropdown%20Dependency.gif" border="1px"/>
+![demo](https://raw.github.com/novay/novay-gallery/master/My%20Screenshot/Demo/Demo%20Dropdown%20Dependency.gif)
 
 ### Fitur
  - AJAX Process
@@ -17,17 +16,24 @@
  - Kunjungi `localhost:8000` melalui browser
 
 ### Tutorial
- - #### Download [Laravel](https://github.com/laravel/laravel/archive/master.zip)
+ - Download [Laravel](https://github.com/laravel/laravel/archive/master.zip) dan Extract
+ - Buka Command Prompt atau Terminal lalu tuju ke direktori proyek
+
+ - ####Generate Key
+   `php artisan key:generate`
+
+ - ####Migrations
+   - Eksekusi Perintah berikut untuk membuat migration tabel :
+     `php artisan migrate:make buat_tabel_provinsi`
+     `php artisan migrate:make buat_tabel_kabupaten_kota`
+     `php artisan migrate:make buat_tabel_kecamatan`
+     `php artisan migrate:make buat_tabel_kelurahan_desa`
+   - Isi masing-masing file tabel yang dibuat di `app/database/migrations/*`
+     - 
+     - 
+     - 
 
 
-
-
-php artisan migrate:make buat_tabel_provinsi
-php artisan migrate:make buat_tabel_kabupaten_kota
-php artisan migrate:make buat_tabel_kecamatan
-php artisan migrate:make buat_tabel_kelurahan_desa
-
-isi data "app/database/migrations/*"
 
 php artisan migrate
 
@@ -51,3 +57,27 @@ localhost:8000
  - Laravel 4.1
  - jQuery v1.8.2
  - Dida Nurwanda
+
+
+
+ ```
+public function buildMenu($menu, $parentid = 0) 
+{ 
+  $result = null;
+  foreach ($menu as $item) 
+    if ($item->parent_id == $parentid) { 
+      $result .= "<li class='dd-item nested-list-item' data-order='{$item->order}' data-id='{$item->id}'>
+      <div class='dd-handle nested-list-handle'>
+        <span class='glyphicon glyphicon-move'></span>
+      </div>
+      <div class='nested-list-content'>{$item->label}
+        <div class='pull-right'>
+          <a href='".url("admin/menu/edit/{$item->id}")."'>Edit</a> |
+          <a href='#' class='delete_toggle' rel='{$item->id}'>Delete</a>
+        </div>
+      </div>".$this->buildMenu($menu, $item->id) . "</li>"; 
+    } 
+  return $result ?  "\n<ol class=\"dd-list\">\n$result</ol>\n" : null; 
+} 
+
+```
