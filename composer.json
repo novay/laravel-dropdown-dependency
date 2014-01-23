@@ -1,8 +1,7 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
+	"name": "novay/laravel-dropdown-dependency",
+	"description": "Dropdown turunan menggunakan framework Laravel",
+	"keywords": ["dropdown", "laravel", "dependency"],
 	"require": {
 		"laravel/framework": "4.1.*"
 	},
